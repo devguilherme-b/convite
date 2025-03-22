@@ -15,7 +15,22 @@ body {
     padding: 20px;
     color: rgb(42, 42, 42);
 }
-
+.convite a{
+    text-decoration: none;
+    border: 1px solid blueviolet;
+    color: blueviolet;
+    border-radius: 30px;
+    padding: 3px 5px;
+    transition: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.convite a:hover{
+    text-decoration: none;
+    border: 1px solid rgb(132, 0, 255);
+    color: rgb(233, 209, 255);
+    background-color: blueviolet;
+    border-radius: 30px;
+    padding: 3px 5px;
+}
 .convite {
     background: white;
     padding: 40px;
