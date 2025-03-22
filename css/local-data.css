@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #e9b3ff;
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    padding: 20px;
+    color: rgb(42, 42, 42);
+}
+
+.convite {
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.1));
+    position: relative;
+    max-width: 400px;
+    width: 100%;
+}
+img .laco {
+    transform: rotate(67deg);
+}
+.laco {
+    width: 100%;
+    position: absolute;
+    top: -40px;
+    right: -120px;
+}
+
+h1 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.nome{
+    font-size: 1.1rem;
+}
+
+.detalhes-data{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.detalhes-data strong{
+    font-size: 1.5rem;
+}
+
+.data {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.detalhes {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.assinatura {
+    font-style: italic;
+    margin-top: 15px;
+}
+
+.beijos img {
+    position: absolute;
+    width: 80px;
+    mix-blend-mode: multiply;
+}
+.beijo{
+    left: -25px;
+    bottom: 0;
+    animation: flutuacao 3s ease-in-out infinite;
+}
+.beijo-two{
+    bottom: -40px;
+    animation: flutuacao 3s ease-in-out infinite;
+}
+.bola {
+    position: absolute;
+    height: auto;
+    bottom: -10px;
+    right: -100px;
+    bottom: -100px;
+    width: 200px;
+}
+
+/* Animação de Fade-In */
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 1s ease-in forwards;
+}
+
+.delay { animation-delay: 0.5s; }
+.delay2 { 
+    margin-top: 1rem;
+    color: blueviolet;
+    animation-delay: 1s;
+ }
+.delay3 { animation-delay: 1.5s; }
+.delay4 { animation-delay: 2s; }
+.delay5 { animation-delay: 2.5s; }
+.delay6 { animation-delay: 3s; }
+.delay-img{
+    transform: rotate(50deg);
+    animation-delay: 0.5s;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes flutuacao {
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-10px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}

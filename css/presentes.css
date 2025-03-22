@@ -1,0 +1,115 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #fff098;
+    color: #333;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+h1 {
+    color: #333;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.product-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+.product-card:hover {
+    transform: scale(1.05);
+}
+
+.image-stack {
+    position: relative;
+    height: 150px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image-stack img {
+    position: absolute;
+    width: 90px;
+    transition: all 0.5s ease;
+    filter: drop-shadow(1px 1px 4px rgba(247, 0, 255, 0.326));
+}
+.excessao1{
+    height: 150px;
+}
+.image-stack img.top {
+    z-index: 3;
+}
+
+.image-stack img.middle {
+    z-index: 2;
+}
+
+.image-stack img.bottom {
+    z-index: 1;
+}
+
+.product-card.active .image-stack img.top {
+    transform: translateX(-30px) rotate(-10deg);
+}
+
+.product-card.active .image-stack img.middle {
+    transform: translateX(0) rotate(0);
+}
+
+.product-card.active .image-stack img.bottom {
+    transform: translateX(30px) rotate(10deg);
+}
+
+h3 {
+    margin-top: 160px;
+    color: #555;
+}
+
+
+.beijos img {
+    position: absolute;
+    width: 80px;
+    mix-blend-mode: multiply;
+}
+.beijo{
+    left: -20px;
+    bottom: 0;
+    animation: flutuacao 3s ease-in-out infinite;
+}
+.beijo-two{
+    bottom: -30px;
+    transform: rotate(60deg);
+    animation: flutuacao 3s ease-in-out infinite;
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes flutuacao {
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-10px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
