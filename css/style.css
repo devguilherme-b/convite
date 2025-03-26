@@ -76,6 +76,9 @@ html, body{
     color: #8f8591;
     animation-delay: 3.2s; }
 .creditos{
+    opacity: 0;
+    animation: fadeIn 0.5s ease-in forwards;
+    animation-delay: 2.4s;
     margin: 3rem;
     color: #5f5462;
 }
