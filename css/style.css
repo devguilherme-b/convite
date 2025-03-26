@@ -73,7 +73,8 @@ html, body{
 }
 .delay7 { 
     text-decoration: none;
-    animation-delay: 3.2s; }
+    animation-delay: 3.2s; 
+    color: #5f5462;}
 .creditos{
     opacity: 0;
     animation: fadeIn 0.5s ease-in forwards;
