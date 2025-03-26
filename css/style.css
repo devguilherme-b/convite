@@ -4,6 +4,8 @@
 html, body{
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
 }
 .invitation-content {
     margin: 0;
@@ -68,6 +70,14 @@ html, body{
     justify-content: space-between;
     width: 300px;
     margin: 20px 0;
+}
+.delay7 { 
+    text-decoration: none;
+    color: #8f8591;
+    animation-delay: 3.2s; }
+.creditos{
+    margin: 3rem;
+    color: #5f5462;
 }
 .info a{
     border-left: 1px solid rgb(4, 4, 4);

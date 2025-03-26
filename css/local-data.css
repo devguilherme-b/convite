@@ -6,6 +6,7 @@
 
 body {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
@@ -127,11 +128,17 @@ h1 {
 .delay4 { animation-delay: 2s; }
 .delay5 { animation-delay: 2.5s; }
 .delay6 { animation-delay: 3s; }
+.delay7 { 
+    text-decoration: none;
+    color: #8a45a5;
+    animation-delay: 3.2s; }
 .delay-img{
     transform: rotate(50deg);
     animation-delay: 0.5s;
 }
-
+.creditos{
+    color: #5f5462;
+}
 @keyframes fadeIn {
     from { opacity: 0; }
     to { opacity: 1; }
